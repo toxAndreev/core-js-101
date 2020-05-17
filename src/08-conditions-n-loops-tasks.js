@@ -305,7 +305,7 @@ function reverseInteger(num) {
  *   5436468789016589 => false
  *   4916123456789012 => false
  */
-function isCreditCardNumber(ccn) {
+function isCreditCardNumber() {
 //   let tmp = ccn.toString();
 //   tmp = tmp.split('').reverse().join('');
 //   let sum = 0;
@@ -478,7 +478,7 @@ function getCommonDirectoryPath() {
  *                         [ 6 ]]
  *
  */
-function getMatrixProduct(m1, m2) {
+function getMatrixProduct() {
 //   const rowsM1 = m1.length; const
 //     colsM1 = m1[0].length;
 //   const rowsM2 = m2.length; const
@@ -527,19 +527,8 @@ function getMatrixProduct(m1, m2) {
  *    [    ,   ,    ]]
  *
  */
-function evaluateTicTacToePosition(position) {
-  // for (let i = 0; i < 3; i++) {
-  //   if (position[i][0] === position[i][1] && position[i][1] === position[i][2] && position[i][0] !== undefined) {
-  //     return position[i][0];
-  //   }
-  // }
-  // for (let i = 0; i < 3; i++) {
-  //   if (position[0][i] === position[1][i] && position[1][i] === position[2][i] && position[0][i] !== undefined) {
-  //     return position[0][i];
-  //   }
-  // }
-  // if (position[0][0] === position[1][1] && position[1][1] === position[2][2] && position[1][1] !== undefined) return position[0][0];
-  // if (position[0][2] === position[1][1] && position[1][1] === position[2][0] && position[1][1] !== undefined) return position[0][2];
+function evaluateTicTacToePosition() {
+
 }
 
 
