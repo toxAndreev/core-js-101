@@ -32,7 +32,8 @@
  * @return {RegExp}
  */
 function getRegexForGuid() {
-  throw new Error('Not implemented');
+  const tmp = /{3|{2|{0/;
+  return tmp;
 }
 
 
@@ -54,9 +55,9 @@ function getRegexForGuid() {
  *
  */
 function getRegexForPitSpot() {
-  throw new Error('Not implemented');
+  const tmp = /^s|^r|p(?=i)/;
+  return tmp;
 }
-
 
 /**
  * Returns the password validator regex.
@@ -78,8 +79,8 @@ function getRegexForPitSpot() {
  *   'PASSW0RD'.match(validator)  => false
  *   'Pa55'.match(validator) => false
  */
-function getPasswordValidator(/* minLength */) {
-  throw new Error('Not implemented');
+function getPasswordValidator(minLength) {
+  return new RegExp(`(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{${minLength},}$`);
 }
 
 

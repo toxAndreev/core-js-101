@@ -20,8 +20,8 @@
  *    console.log(r.height);      // => 20
  *    console.log(r.getArea());   // => 200
  */
-function Rectangle(/* width, height */) {
-  throw new Error('Not implemented');
+function Rectangle(width, height) {
+  return { width, height, getArea: () => width * height };
 }
 
 
@@ -35,8 +35,8 @@ function Rectangle(/* width, height */) {
  *    [1,2,3]   =>  '[1,2,3]'
  *    { width: 10, height : 20 } => '{"height":10,"width":20}'
  */
-function getJSON(/* obj */) {
-  throw new Error('Not implemented');
+function getJSON(obj) {
+  return JSON.stringify(obj);
 }
 
 
@@ -51,8 +51,10 @@ function getJSON(/* obj */) {
  *    const r = fromJSON(Circle.prototype, '{"radius":10}');
  *
  */
-function fromJSON(/* proto, json */) {
-  throw new Error('Not implemented');
+function fromJSON(proto, json) {
+  const o = JSON.parse(json);
+  Object.setPrototypeOf(o, Rectangle.prototype);
+  return o;
 }
 
 
@@ -111,31 +113,32 @@ function fromJSON(/* proto, json */) {
  */
 
 const cssSelectorBuilder = {
-  element(/* value */) {
+
+  element() {
     throw new Error('Not implemented');
   },
 
-  id(/* value */) {
+  id() {
     throw new Error('Not implemented');
   },
 
-  class(/* value */) {
+  class() {
     throw new Error('Not implemented');
   },
 
-  attr(/* value */) {
+  attr() {
     throw new Error('Not implemented');
   },
 
-  pseudoClass(/* value */) {
+  pseudoClass() {
     throw new Error('Not implemented');
   },
 
-  pseudoElement(/* value */) {
+  pseudoElement() {
     throw new Error('Not implemented');
   },
 
-  combine(/* selector1, combinator, selector2 */) {
+  combine() {
     throw new Error('Not implemented');
   },
 };
