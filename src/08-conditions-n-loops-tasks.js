@@ -160,11 +160,8 @@ function doRectanglesOverlap(rect1, rect2) {
  *   { center: { x:0, y:0 }, radius:10 },  { x:10, y:10 }   => false
  *
  */
-function isInsideCircle(circle, point) {
-  if ((point.x - circle.center.x, 2) ** 2 + (point.y - circle.center.y, 2) ** 2
-    < (circle.radius, 2) ** 2) return true;
-  return false;
-//   throw new Error('Not implemented');
+function isInsideCircle() {
+  throw new Error('Not implemented');
 }
 
 
@@ -323,7 +320,7 @@ function isCreditCardNumber() {
 //   }
 //   if (sum % 10 === 0) return true;
 //   return false;
-// //    throw new Error('Not implemented');
+  throw new Error('Not implemented');
 }
 
 /**
@@ -456,7 +453,7 @@ function getCommonDirectoryPath() {
   // }
   // if (res.length === 0) return '';
   // return `${res.join('/')}/`;
-  // //  throw new Error('Not implemented');
+  throw new Error('Not implemented');
 }
 
 
@@ -494,7 +491,7 @@ function getMatrixProduct() {
 //     }
 //   }
 //   return res;
-//   // throw new Error('Not implemented');
+  throw new Error('Not implemented');
 }
 
 /**
@@ -528,7 +525,7 @@ function getMatrixProduct() {
  *
  */
 function evaluateTicTacToePosition() {
-
+  throw new Error('Not implemented');
 }
 
 
